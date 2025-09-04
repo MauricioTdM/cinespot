@@ -1,13 +1,8 @@
 export default function MovieDetailsSkeleton() {
     return (
-        // ESTRUTURA PRINCIPAL - Idêntica ao componente final (pt-5)
         <div className="min-h-screen text-white bg-secondary pt-5 animate-pulse">
-            {/* Primeira seção - Idêntica ao componente final */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-                {/* Poster Skeleton */}
                 <div className="flex-shrink-0 w-[300px] h-[450px] bg-gray-700 rounded-2xl"></div>
-
-                {/* Info principal Skeleton - Idêntica ao componente final (gap-4, max-w-3xl) */}
                 <div className="flex flex-col gap-4 max-w-3xl w-full">
                     <div className="flex flex-wrap gap-2">
                         <div className="h-6 w-24 bg-gray-700 rounded-full"></div>
@@ -26,9 +21,7 @@ export default function MovieDetailsSkeleton() {
                 </div>
             </div>
 
-            {/* Segunda seção - CORRIGIDO para ter a mesma estrutura do componente final (max-w-6xl, px-4, py-10, space-y-10) */}
             <div className="max-w-6xl mx-auto px-4 py-10 space-y-10">
-                {/* Sinopse Skeleton */}
                 <section>
                     <div className="h-8 w-32 bg-gray-700 rounded mb-3"></div>
                     <div className="space-y-2">
@@ -38,7 +31,6 @@ export default function MovieDetailsSkeleton() {
                     </div>
                 </section>
 
-                {/* Detalhes adicionais Skeleton - Idêntica ao componente final */}
                 <section className="grid sm:grid-cols-2 gap-6">
                     {Array.from({ length: 8 }).map((_, index) => (
                         <div key={index} className="h-24 bg-tertiary rounded-xl p-4">

@@ -6,6 +6,7 @@ export default function FavoriteButton({ movie }) {
     const isFavorite = favorites.some((fav) => fav.id === movie.id);
 
     const handleFavoriteClick = (e) => {
+        e.preventDefault();
         e.stopPropagation(); 
         toggleFavorite(movie); 
     };
