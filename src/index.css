@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: rgb(251, 209, 95);
+    --color-secondary: rgb(22, 24, 28);
+    --color-tertiary: rgb(18, 20, 23);
+    --color-quaternary: rgb(32, 36, 43);
+}
+
+html {
+  overflow-y: scroll;
+}
