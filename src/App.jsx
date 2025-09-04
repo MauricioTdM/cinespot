@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import Home from "./pages/Home.jsx"
 import Favorites from "./pages/Favorites.jsx"
 import Search from "./pages/Search.jsx"
@@ -12,7 +12,7 @@ export default function App() {
             <Router>
                 <Layout>
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/" element={<Navigate to="/buscar" replace />} />
                         <Route path="/favoritos" element={<Favorites />} />
                         <Route path="/buscar" element={<Search />} />
                         <Route path="/filme/:movieId" element={<MovieDetail />} />
